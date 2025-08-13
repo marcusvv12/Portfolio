@@ -1,13 +1,12 @@
 # Portfolio
-
 Welcome to the source code of my personal website! 👋
 
 The site is organized into the following sections:
 
--  **Homepage** 
--  **Experience** –  Showcasing my professional experience, education, awards, and projects.
--  **About** – Everything about me.
--  **Resume** – My resume
+- **Homepage**
+- **Experience** – An overview of my  journey in Software Engineering.
+- **Resume** – My resume with my experiences and informations.
+- **About** – Some information and my contact
 
 ---
 
@@ -27,11 +26,25 @@ This project is built using the following technologies:
 The project is organized into the following directories:
 
 ```text
-app
-
+src
+└── components
+    └── ui
+    assets
+    hooks
+    lib
+    pages
+public
+└── projects
 ```
 
 | Directory            | Description                                             |
 | -------------------- | ------------------------------------------------------- |
-| `app`                | Root directory for Next.js application with app router. |
+| `src`                | Root directory for Next.js application with app router. |
+| `public`             | Public static assets like images.                       |
+| `public/projects`    | Projects wireframes.                                    |
+| `src/assets`         | (?).                                                    |
+| `src/components`     | Projects page components and layout.                    |
+| `src/hooks`          | Endpoint for fetching movies data.                      |
+| `src/lib`            | Projects library.                                       |
+| `src/pages`          | Projects pages.                                         |
 
