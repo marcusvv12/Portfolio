@@ -49,8 +49,8 @@ const experience: Experience[] = [
     id: 1,
     title: "Infantry Cadet - Air Force Academy",
     date: "Jan 21 - Jul 22",
-    img_url: "/images/experience/military-2.jpg",
-    img_url_2: "/images/experience/military.jpg",
+    img_url: "/images/experience/puc2.jpeg",
+    img_url_2: "/images/experience/puc2.jpeg",
     description:
       "Completed over a year of military formation focused on leadership, resilience, ethical decision-making, and collective responsibility, while developing mental discipline and a commitment to public service.",
     badges: ["Discipline", "Leadership", "Teamwork", "Ethics"],
@@ -59,8 +59,8 @@ const experience: Experience[] = [
     id: 2,
     title: "Bachelor's in Software Engineering - PUC Minas",
     date: "Jan 23 - Dec 26",
-    img_url: "/images/experience/puc-2.jpg",
-    img_url_2: "/images/experience/puc.jpg",
+    img_url: "/images/experience/disney-2.jpeg",
+    img_url_2: "/images/experience/disney.jpeg",
     description:
       "Enrolled in a program focused on developing modern software solutions with scalable architectures, practical application of agile methodologies, and strong foundations in software engineering theory and practice.",
     badges: ["Scrum", "Architecture", "Agile", "OOP", "DB Design"],
