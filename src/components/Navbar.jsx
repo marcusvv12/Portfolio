@@ -1,12 +1,13 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "Experience", href: "#about" },
-  { name: "Resume", href: "#skills" },
-  { name: "About", href: "#projects" },
+  { name: "Home", href: "#hero"},
+  { name: "Experience", href: "/timeline"},
+  { name: "Resume", href: "#skills"},
+  { name: "About", href: "#projects"},
 ];
 
 export const Navbar = () => {
@@ -34,22 +35,33 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> PedroTech </span>{" "}
+            <span className="text-glow text-foreground"> Marcus </span>{" "}
             Portfolio
           </span>
         </a>
 
         {/* desktop nav */}
+        
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item, key) =>
+            item.href === "/timeline" ? (
+              <Link
+                key={key}
+                to={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={key}
+                href={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                {item.name}
+              </a>
+            )
+          )}
         </div>
 
         {/* mobile nav */}
@@ -72,16 +84,27 @@ export const Navbar = () => {
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
+           {navItems.map((item, key) =>
+              item.href === "/timeline" ? (
+                <Link
+                  key={key}
+                  to={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={key}
+                  href={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              )
+            )}
           </div>
         </div>
       </div>
