@@ -1,8 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { Timeline } from "./components/ui/timeline"; // default export
-import { SkillsTL } from "./components/Skills"; // importe o novo componente
+import { Timeline } from "./components/ui/timeline"; 
+import { SkillsTL } from "./components/Skills"; 
+import { About } from "./components/about"; 
+import { Contact } from "./components/Contact"; 
+import { Projects } from "./components/Projects"; 
 import { Toaster } from "@/components/ui/toaster";
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/skills" element={<SkillsTL />} /> {/* nova rota */}
+          <Route path="/about" element={<About />} /> {/* nova rota */}
+          <Route path="/contact" element={<Contact />} /> {/* nova rota */}
+          <Route path="/projects" element={<Projects />} /> {/* nova rota */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

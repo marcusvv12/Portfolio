@@ -1,6 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import TechBadge from "../../../app/_components/TechBadge";
+import TechBadge from "../../_components/TechBadge";
 import { ThemeToggle } from "../../components/ThemeToggle";
 import { StarBackground } from "../..//components/StarBackground";
 import { Navbar } from "../..//components/Navbar";
@@ -92,7 +92,12 @@ export const Timeline = () => {
               <TechBadge tech="Problem Solving" key="problem-solving" />
               <TechBadge tech="Communication" key="communication" />
             </div>
-
+            
+            <img
+              src="/images/experience/montrealexp.jpg"
+              alt="Montreal Informatica"
+              className="w-full aspect-video object-cover shadow-md my-6"
+            />
 
           </div>
         </div>
@@ -151,7 +156,7 @@ export const Timeline = () => {
               Dec 24 - Feb 25
             </h3>
             <p className="mb-8 font-normal text-xl">
-              International College Program - Disney Parks
+              International College Program - Disney World
             </p>
             <p className="mb-8 text-muted-foreground">
               Gained hands-on experience in operations and guest services at Disney Parks, developing strong problem-solving, communication, and teamwork skills while collaborating in a fast-paced, international environment.
@@ -165,12 +170,12 @@ export const Timeline = () => {
 
             <img
               src="/images/experience/disney.jpeg"
-              alt="Infantry Cadet"
+              alt="Disney"
               className="w-full aspect-video object-cover shadow-md my-6"
             />
             <img
               src="/images/experience/disney-2.jpeg"
-              alt="Infantry Cadet"
+              alt="Disney"
               className="w-full aspect-video object-cover shadow-md my-6"
             />
             
@@ -208,6 +213,11 @@ export const Timeline = () => {
               <TechBadge tech="Collaboration" key="collaboration" />
             </div>
             
+            <img
+              src="/images/experience/90exp.jpg"
+              alt="90 TI"
+              className="w-full aspect-video object-cover shadow-md my-6"
+            />
           </div>
         </div>
 

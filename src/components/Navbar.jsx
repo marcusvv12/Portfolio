@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Experience", href: "/timeline" },
+  { name: "Projects", href: "/projects" },
   { name: "Skills", href: "/skills" },
-  { name: "About", href: "#projects" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+  { name: "CV", href: "/cv" },
 ];
 
 export const Navbar = () => {
