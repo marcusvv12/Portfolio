@@ -1,4 +1,7 @@
 # Portfolio
+
+![alt text](image-2.png)
+
 Welcome to the source code of my personal website! 👋
 
 The site is organized into the following sections:
@@ -87,5 +90,3 @@ npm run dev
 ## Figma 
 
 [Link](https://www.figma.com/design/hxdLXylaiFGKaBiwyy54g8/Porfolio?node-id=0-1&t=Wvsfhmm3QbLnjsnK-1)
-
-![alt text](image-1.png)
