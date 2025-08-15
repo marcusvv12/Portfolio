@@ -17,11 +17,11 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/timeline" element={<Timeline />} />
-          <Route path="/skills" element={<SkillsTL />} /> {/* nova rota */}
-          <Route path="/about" element={<About />} /> {/* nova rota */}
-          <Route path="/contact" element={<Contact />} /> {/* nova rota */}
-          <Route path="/projects" element={<Projects />} /> {/* nova rota */}
-          <Route path="/cv" element={<Cv />} /> {/* nova rota */}
+          <Route path="/skills" element={<SkillsTL />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/projects" element={<Projects />} /> 
+          <Route path="/cv" element={<Cv />} /> 
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
