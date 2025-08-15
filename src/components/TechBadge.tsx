@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion"
-import { Badge } from "../../src/components/ui/badge";
+import { Badge } from "./ui/badge";
 
 
 interface TechBadgeProps {

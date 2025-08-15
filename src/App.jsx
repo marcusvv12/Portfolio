@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { Timeline } from "./components/ui/timeline"; 
-import { SkillsTL } from "./components/Skills"; 
-import { Cv } from "./components/Cv"; 
-import { About } from "./components/about"; 
-import { Contact } from "./components/Contact"; 
-import { Projects } from "./components/Projects"; 
+import { Timeline } from "./pages/timeline"; 
+import { SkillsTL } from "./pages/Skills"; 
+import { Cv } from "./pages/Cv"; 
+import { About } from "./pages/about"; 
+import { Contact } from "./pages/Contact"; 
+import { Projects } from "./pages/Projects"; 
 import { Toaster } from "@/components/ui/toaster";
 
 function App() {

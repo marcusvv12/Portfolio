@@ -1,10 +1,10 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import TechBadge from "../../_components/TechBadge";
-import { ThemeToggle } from "../../components/ThemeToggle";
-import { StarBackground } from "../..//components/StarBackground";
-import { Navbar } from "../..//components/Navbar";
-import { Footer } from "../..//components/Footer";
+import TechBadge from "../components/TechBadge";
+import { ThemeToggle } from "../components/ThemeToggle";
+import { StarBackground } from "../components/StarBackground";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement | null>(null);

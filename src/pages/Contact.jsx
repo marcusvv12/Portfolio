@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "./Navbar";
-import { ThemeToggle } from "./ThemeToggle";
+import { Navbar } from "../components/Navbar";
+import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
-import { AboutSection } from "./AboutSection";
-import { Footer } from "./Footer";
+import { ContactSection } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
 
-export const About = () => {
+export const Contact = () => {
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Background atrás de tudo */}
@@ -23,9 +23,9 @@ export const About = () => {
       <main className="container mx-auto px-4">
         
 
-        {/* Sessão sobre mim */}
-        <section id="about" className="pb-20">
-          <AboutSection />
+        {/* Sessão Contatos*/}
+        <section id="contact" className="pb-20">
+          <ContactSection />
         </section>
       </main>
 

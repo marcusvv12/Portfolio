@@ -3,10 +3,13 @@ Welcome to the source code of my personal website! 👋
 
 The site is organized into the following sections:
 
-- **Homepage**
+- **Home**
 - **Experience** – An overview of my  journey in Software Engineering.
-- **Resume** – My resume with my experiences and informations.
-- **About** – Some information and my contact
+- **Projects** – An overview of my  projects in Software Engineering
+- **Skills** – All my hard skills
+- **About** - A paga to talk more about me
+- **Contact** – My contact and an email forms
+- **CV** – My resume with my experiences and informations.
 
 ---
 
@@ -29,22 +32,60 @@ The project is organized into the following directories:
 src
 └── components
     └── ui
-    assets
     hooks
     lib
     pages
 public
-└── projects
+└── pdf
+    images
+    └── experience
+        me
+        plugin-accessibility
+        projects
 ```
 
-| Directory            | Description                                             |
-| -------------------- | ------------------------------------------------------- |
-| `src`                | Root directory for Next.js application with app router. |
-| `public`             | Public static assets like images.                       |
-| `public/projects`    | Projects wireframes.                                    |
-| `src/assets`         | (?).                                                    |
-| `src/components`     | Projects page components and layout.                    |
-| `src/hooks`          | Endpoint for fetching movies data.                      |
-| `src/lib`            | Projects library.                                       |
-| `src/pages`          | Projects pages.                                         |
+| Directory                                 | Description                                             |
+| ------------------------------------------| ------------------------------------------------------- |
+| `src`                                     | Root directory for Next.js application with app router. |
+| `public`                                  | Public static assets like images.                       |
+| `public/images  `                         | All images.                                             |
+| `public/images/experience  `              | All images used on experience page.                     |
+| `public/images/me  `                      | All images used on about me page.                       |
+| `public/images/plugin-accessibility  `    | Brazil and USA flags.                                   |
+| `public/images/projects  `                | All images used on projects page.                       |
+| `src/components`                          | Projects page components and layout.                    |
+| `src/hooks`                               | Endpoint for fetching movies data.                      |
+| `src/lib`                                 | Library used.                                           |
+| `src/pages`                               | Project pages.                                          |
 
+## Running Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/marcusvv12/Portfolio.git
+```
+
+Go to the project directory
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the server
+
+```bash
+npm run dev
+```
+
+## Figma 
+
+[Link](https://www.figma.com/design/hxdLXylaiFGKaBiwyy54g8/Porfolio?node-id=0-1&t=Wvsfhmm3QbLnjsnK-1)
+
+![alt text](image-1.png)

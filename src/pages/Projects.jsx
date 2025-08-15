@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "./Navbar";
-import { ThemeToggle } from "./ThemeToggle";
+import { Navbar } from "../components/Navbar";
+import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
-import { ContactSection } from "./ContactSection";
-import { Footer } from "./Footer";
+import { ProjectsSection } from "../components/ProjectsSection";
+import { Footer } from "../components/Footer";
 
-export const Contact = () => {
+export const Projects = () => {
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Background atrás de tudo */}
@@ -23,9 +23,9 @@ export const Contact = () => {
       <main className="container mx-auto px-4">
         
 
-        {/* Sessão Contatos*/}
-        <section id="contact" className="pb-20">
-          <ContactSection />
+        {/* Sessão de projetos */}
+        <section id="about" className="pb-20">
+          <ProjectsSection />
         </section>
       </main>
 

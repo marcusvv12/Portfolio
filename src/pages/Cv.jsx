@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import { Navbar } from "./Navbar";
-import { Footer } from "./Footer";
-import { ThemeToggle } from "./ThemeToggle";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
 
 export const Cv = () => {
