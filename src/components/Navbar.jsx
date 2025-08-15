@@ -10,7 +10,7 @@ const navItems = [
   { name: "Skills", href: "/skills" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
-  { name: "CV", href: "/cv" },
+  { name: "CV", href: "/cv" }, // se for externo, pode usar <a>
 ];
 
 export const Navbar = () => {
@@ -19,7 +19,6 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Corrigido: window.scrollY ao invés de window.screenY
       setIsScrolled(window.scrollY > 10);
     };
 
@@ -37,39 +36,29 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a
+        <Link
           className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
+          to="/"
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground"> Marcus </span> Portfolio
           </span>
-        </a>
+        </Link>
 
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) =>
-            item.href === "/timeline" ? (
-              <Link
-                key={key}
-                to={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-              >
-                {item.name}
-              </Link>
-            ) : (
-              <a
-                key={key}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-              >
-                {item.name}
-              </a>
-            )
-          )}
+          {navItems.map((item, key) => (
+            <Link
+              key={key}
+              to={item.href}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
 
-        {/* mobile nav */}
+        {/* mobile nav toggle */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
@@ -78,6 +67,7 @@ export const Navbar = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
+        {/* mobile nav menu */}
         <div
           className={cn(
             "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
@@ -87,28 +77,16 @@ export const Navbar = () => {
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
-            {navItems.map((item, key) =>
-            
-              item.href === "/timeline" ? (
-                <Link
-                  key={key}
-                  to={item.href}
-                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  key={key}
-                  href={item.href}
-                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              )
-            )}
+            {navItems.map((item, key) => (
+              <Link
+                key={key}
+                to={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
