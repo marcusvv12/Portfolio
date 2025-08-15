@@ -4,7 +4,7 @@ import { NotFound } from "./pages/NotFound";
 import { Timeline } from "./pages/timeline"; 
 import { SkillsTL } from "./pages/Skills"; 
 import { Cv } from "./pages/Cv"; 
-import { About } from "./pages/about"; 
+import { About } from "./pages/About"; 
 import { Contact } from "./pages/Contact"; 
 import { Projects } from "./pages/Projects"; 
 import { Toaster } from "@/components/ui/toaster";
