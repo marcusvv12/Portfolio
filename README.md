@@ -2,6 +2,8 @@
 
 ![alt text](image-2.png)
 
+The website: https://marcusalvesdev.onrender.com/skills
+
 Welcome to the source code of my personal website! 👋
 
 The site is organized into the following sections:
