@@ -11,12 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Servir os arquivos da build
 app.use(express.static(path.join(__dirname, "dist")));
 
-// Rota principal
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
-
-// Redireciona todas as outras rotas para o React
+// Para qualquer rota que não seja arquivo estático, manda o index.html
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
