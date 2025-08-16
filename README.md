@@ -24,6 +24,7 @@ This project is built using the following technologies:
 
 - **Next.js** – A React framework for building server-rendered applications.
 - **TypeScript** – A superset of JavaScript that adds static types.
+- **Vite** – A fast modern frontend build tool that provides instant server start.
 - **Tailwind CSS v4** – A utility-first CSS framework for rapid UI development.
 - **Shadcn/ui** – A component library for building beautiful UIs with Tailwind CSS.
 
