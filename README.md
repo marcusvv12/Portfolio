@@ -2,7 +2,7 @@
 
 ![alt text](image-2.png)
 
-The website: https://marcusalvesdev.onrender.com/skills
+The website: https://marcusalvesdev.vercel.app/
 
 Welcome to the source code of my personal website! 👋
 
